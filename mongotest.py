@@ -10,13 +10,13 @@ MY_DB = 'my_database'
 MY_COLL = 'my_collection'
 
 #Inser the name of your primary key here (as a string).
-MY_PRIMARY_KEY_NAME = 'an_attr'
+MY_PRIMARY_KEY_NAME = 'b'
 
 my_coll = client.get_database(MY_DB).get_collection(MY_COLL)
 
 #Replace with your module's name
 try:
-  from your_module.py import find_object, update_object, remove_object
+  from a4mongo import find_object, update_object, remove_object
 except ImportError:
   from warnings import warn
   warn('Failed to import library!')
